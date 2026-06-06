@@ -1,12 +1,4 @@
-<h2 align="center">
-    <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
-    🎓 Faculty of Information Technology (DaiNam University)
-    </a>
-</h2>
-
-<h2 align="center">
-    🐄 HỆ THỐNG NHẬN DIỆN & PHÂN LOẠI VẬT NUÔI BẰNG YOLOv8
-</h2>
+<h2 align="center"> <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin"> 🎓 Faculty of Information Technology (DaiNam University) </a> </h2> <h2 align="center"> CHAT ROOM DÙNG UDP MULTICAST </h2>
 
 
 # 📖 Giới thiệu

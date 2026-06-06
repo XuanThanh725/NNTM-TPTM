@@ -4,172 +4,172 @@
     </a>
 </h2>
 
-<h2 align="center">
-    🐄 HỆ THỐNG NHẬN DIỆN & PHÂN LOẠI VẬT NUÔI BẰNG YOLOv8
-</h2>
+<h1 align="center">
+🐄 HỆ THỐNG NHẬN DIỆN VÀ PHÂN LOẠI VẬT NUÔI BẰNG YOLOv8
+</h1>
 
 <div align="center">
-    <p align="center">
-        <img alt="AIoTLab Logo" width="170" src="https://github.com/user-attachments/assets/711a2cd8-7eb4-4dae-9d90-12c0a0a208a2" />
-        <img alt="AIoTLab Logo" width="180" src="https://github.com/user-attachments/assets/dc2ef2b8-9a70-4cfa-9b4b-f6c2f25f1660" />
-        <img alt="DaiNam University Logo" width="200" src="https://github.com/user-attachments/assets/77fe0fd1-2e55-4032-be3c-b1a705a1b574" />
-    </p>
 
-[![YOLOv8](https://img.shields.io/badge/YOLOv8-Object%20Detection-green?style=for-the-badge)]
-[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-blue?style=for-the-badge)]
-[![Streamlit](https://img.shields.io/badge/Streamlit-Web%20Dashboard-red?style=for-the-badge)]
+![YOLOv8](https://img.shields.io/badge/YOLOv8-AI-green?style=for-the-badge)
+![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-blue?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=for-the-badge)
 
 </div>
 
 ---
 
-# 📖 1. Giới thiệu hệ thống
+# 📖 Giới thiệu
 
-Hệ thống nhận diện và phân loại vật nuôi là ứng dụng sử dụng trí tuệ nhân tạo (AI) kết hợp mô hình YOLOv8 để phát hiện, nhận diện và thống kê các loại vật nuôi từ hình ảnh, video hoặc camera thời gian thực.
+Hệ thống nhận diện và phân loại vật nuôi là ứng dụng sử dụng trí tuệ nhân tạo (AI) kết hợp mô hình YOLOv8 nhằm phát hiện, nhận diện và thống kê các loại vật nuôi từ ảnh, video hoặc camera thời gian thực.
 
 Hệ thống hỗ trợ:
 
 - Nhận diện vật nuôi theo thời gian thực.
-- Phân loại nhiều loài vật nuôi khác nhau.
-- Đếm số lượng từng loại vật nuôi.
+- Đếm số lượng vật nuôi.
 - Chụp ảnh tự động khi phát hiện vật nuôi.
 - Lưu lịch sử nhận diện vào CSV.
-- Xuất báo cáo thống kê.
+- Xuất dữ liệu Excel.
 - Hỗ trợ Webcam, Camera IP và ESP32-CAM.
-- Dashboard trực quan với biểu đồ thống kê.
+- Dashboard thống kê trực quan.
 
 ---
 
-# 🔧 2. Công nghệ sử dụng
+# 🎯 Mục tiêu
+
+- Xây dựng hệ thống nhận diện vật nuôi bằng AI.
+- Hỗ trợ ảnh, video và camera.
+- Thống kê số lượng vật nuôi.
+- Lưu dữ liệu tự động.
+- Hỗ trợ quản lý vật nuôi trong trang trại.
+
+---
+
+# 🔧 Công nghệ sử dụng
 
 ## 🤖 YOLOv8
-- Phát hiện đối tượng thời gian thực.
-- Nhận diện vật nuôi với độ chính xác cao.
-- Hiển thị Bounding Box và độ tin cậy.
+
+- Nhận diện đối tượng thời gian thực.
+- Độ chính xác cao.
+- Tốc độ xử lý nhanh.
 
 ## 👁 OpenCV
-- Xử lý ảnh và video.
-- Kết nối Webcam, Camera IP và ESP32-CAM.
-- Chụp ảnh tự động.
+
+- Xử lý ảnh.
+- Xử lý video.
+- Kết nối camera.
 
 ## 🌐 Streamlit
-- Xây dựng Dashboard Web.
-- Hiển thị biểu đồ và thống kê.
-- Quản lý dữ liệu nhận diện.
 
-## 💾 Pandas + CSV
-- Lưu lịch sử nhận diện.
-- Xuất báo cáo thống kê.
-- Quản lý dữ liệu vật nuôi.
+- Giao diện Web Dashboard.
+- Hiển thị thống kê.
+- Quản lý dữ liệu.
 
-## 📷 Camera
-- Webcam Laptop.
-- Camera điện thoại IP Webcam.
-- ESP32-CAM.
+## 💾 Pandas
+
+- Lưu dữ liệu CSV.
+- Xuất báo cáo Excel.
 
 ---
 
-# 🚀 3. Chức năng chính
+# 🏗️ Kiến trúc hệ thống
+
+```text
+Camera / Ảnh / Video
+          │
+          ▼
+       YOLOv8
+          │
+          ▼
+     Nhận diện vật nuôi
+          │
+          ▼
+    OpenCV xử lý ảnh
+          │
+          ▼
+     Streamlit Dashboard
+          │
+          ▼
+CSV / Excel / Thống kê
+```
+
+# 🚀 Chức năng chính
 
 ## 📷 Nhận diện qua Camera
 
-- Nhận diện vật nuôi thời gian thực.
-- Hiển thị Bounding Box.
-- Hiển thị độ tin cậy.
-- Tự động chụp ảnh khi phát hiện.
-- Tự động lưu CSV.
-- Thống kê số lượng vật nuôi.
+- Webcam Laptop
+- Camera điện thoại
+- ESP32-CAM
+- Nhận diện thời gian thực
+- Tự động chụp ảnh
 
 ## 🖼 Nhận diện qua Ảnh
 
-- Upload ảnh.
-- Phân tích ảnh.
-- Hiển thị kết quả trực tiếp.
-- Lưu ảnh kết quả.
-- Xuất dữ liệu CSV.
+- Upload ảnh
+- Phân tích ảnh
+- Lưu ảnh kết quả
 
 ## 🎥 Nhận diện qua Video
 
-- Upload video.
-- Phân tích từng frame.
-- Tạm dừng / Tiếp tục.
-- Thanh tiến trình xử lý.
-- Chụp ảnh khi phát hiện vật nuôi.
-- Thống kê số lượng từng loại.
-- Xuất CSV sau khi hoàn thành.
+- Upload video
+- Phân tích từng frame
+- Tạm dừng / Tiếp tục
+- Tự động chụp ảnh
+- Xuất CSV
 
 ## 📊 Dashboard
 
-- Tổng số vật nuôi.
-- Thống kê theo từng loại.
-- Biểu đồ cột.
-- Biểu đồ tròn.
-- Bảng dữ liệu chi tiết.
-- Cảnh báo khi số lượng vượt ngưỡng.
-
-## 💾 Quản lý dữ liệu
-
-- Lưu ảnh kết quả.
-- Lưu CSV.
-- Xem lịch sử nhận diện.
-- Tải dữ liệu Excel.
-- Tải dữ liệu CSV.
+- Tổng số vật nuôi
+- Biểu đồ thống kê
+- Bảng dữ liệu
+- Lịch sử nhận diện
 
 ---
 
-# 📸 4. Hình ảnh chức năng
+# 📸 Hình ảnh minh họa
 
 <p align="center">
-  <img src="docs/home.png" width="900"/>
+<img src="docs/home.png" width="900">
 </p>
 
 <p align="center">
-  <em>Hình 1: Giao diện trang chủ</em>
+<em>Hình 1. Giao diện trang chủ</em>
 </p>
 
 <p align="center">
-  <img src="docs/camera.png" width="900"/>
+<img src="docs/camera.png" width="900">
 </p>
 
 <p align="center">
-  <em>Hình 2: Nhận diện qua Camera</em>
+<em>Hình 2. Nhận diện qua Camera</em>
 </p>
 
 <p align="center">
-  <img src="docs/image.png" width="900"/>
+<img src="docs/image.png" width="900">
 </p>
 
 <p align="center">
-  <em>Hình 3: Nhận diện qua Ảnh</em>
+<em>Hình 3. Nhận diện qua Ảnh</em>
 </p>
 
 <p align="center">
-  <img src="docs/video.png" width="900"/>
+<img src="docs/video.png" width="900">
 </p>
 
 <p align="center">
-  <em>Hình 4: Nhận diện qua Video</em>
+<em>Hình 4. Nhận diện qua Video</em>
 </p>
 
 <p align="center">
-  <img src="docs/dashboard.png" width="900"/>
+<img src="SODO.png" width="1000">
 </p>
 
 <p align="center">
-  <em>Hình 5: Dashboard thống kê</em>
-</p>
-
-<p align="center">
-  <img src="SODO.png" width="1000"/>
-</p>
-
-<p align="center">
-  <em>Hình 6: Sơ đồ kiến trúc hệ thống nhận diện và phân loại vật nuôi</em>
+<em>Hình 5. Sơ đồ hệ thống</em>
 </p>
 
 ---
 
-# 📂 5. Cấu trúc dự án
+# 📂 Cấu trúc thư mục
 
 ```text
 AnimalDetection/
@@ -180,21 +180,103 @@ AnimalDetection/
 │
 ├── docs/
 │   ├── home.png
-│   ├── camera.png
 │   ├── image.png
 │   ├── video.png
-│   ├── dashboard.png
+│   ├── camera.png
 │   └── SODO.png
 │
 ├── ket_qua/
 │   ├── anh/
-│   ├── camera/
-│   ├── video/
 │   ├── csv/
 │   └── lich_su_nhan_dien.csv
 │
-├── data/
-│   └── thong_ke.xlsx
-│
 └── models/
     └── yolov8s.pt
+```
+
+# 🐾 Vật nuôi hỗ trợ
+
+| STT | Loài |
+|-----|-------|
+| 1 | Chó |
+| 2 | Mèo |
+| 3 | Bò |
+| 4 | Cừu |
+| 5 | Ngựa |
+| 6 | Gà |
+| 7 | Vịt |
+| 8 | Chim |
+| 9 | Hươu |
+| 10 | Voi |
+| 11 | Gấu |
+| 12 | Hươu cao cổ |
+
+---
+
+# ⚙️ Cài đặt
+
+## Cài thư viện
+
+```bash
+pip install -r requirements.txt
+```
+
+## Chạy chương trình
+
+```bash
+streamlit run app.py
+```
+
+# 📊 Kết quả đầu ra
+
+Hệ thống sẽ:
+
+✅ Nhận diện vật nuôi
+
+✅ Hiển thị độ tin cậy
+
+✅ Vẽ Bounding Box
+
+✅ Đếm số lượng
+
+✅ Lưu CSV
+
+✅ Xuất Excel
+
+✅ Tự động chụp ảnh
+
+✅ Dashboard thống kê
+
+---
+
+# 🔮 Hướng phát triển
+
+- Train mô hình riêng.
+- Kết nối MySQL.
+- Kết nối Cloud.
+- Cảnh báo qua Email/Zalo.
+- Tích hợp IoT cho trang trại thông minh.
+- Quản lý vật nuôi bằng AI.
+
+---
+
+# 👨‍💻 Thành viên thực hiện
+
+| Họ tên | MSSV |
+|---------|---------|
+| ............... | ............... |
+| ............... | ............... |
+| ............... | ............... |
+| ............... | ............... |
+
+---
+
+<div align="center">
+
+### 🏆 ĐỒ ÁN TRÍ TUỆ NHÂN TẠO
+
+### 🐄 HỆ THỐNG NHẬN DIỆN VÀ PHÂN LOẠI VẬT NUÔI BẰNG YOLOv8
+
+Faculty of Information Technology - Dai Nam University
+
+</div>
